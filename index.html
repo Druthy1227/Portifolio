@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- =============================================
+       META & SEO
+       ============================================= -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Luiz — Desenvolvedor com foco em Back-end, DevOps e Cibersegurança. Estudante de Sistemas de Informação no UNI-RN." />
+  <meta name="keywords" content="desenvolvedor back-end, cibersegurança, devops, nodejs, python, go, postgresql, portfólio" />
+  <meta name="author" content="Luiz" />
+
+  <!-- Open Graph (para compartilhamentos em redes sociais) -->
+  <meta property="og:title" content="Luiz | Dev Back-end & Cibersegurança" />
+  <meta property="og:description" content="Transformando lógica em soluções seguras e eficientes." />
+  <meta property="og:type" content="website" />
+
+  <title>Luiz | Dev Back-end & Cibersegurança</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       CABEÇALHO / NAVEGAÇÃO
+       ============================================= -->
+  <header role="banner">
+    <nav aria-label="Navegação principal">
+      <a class="nav-logo" href="#hero" aria-label="Ir ao topo — luiz.dev">
+        luiz<span>.dev</span>
+      </a>
+
+      <!-- Botão hamburger para mobile -->
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Abrir menu de navegação"
+        aria-expanded="false"
+        aria-controls="navLinks"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#sobre">./sobre</a></li>
+        <li><a href="#habilidades">./skills</a></li>
+        <li><a href="#areas">./areas</a></li>
+        <li><a href="#certs">./certs</a></li>
+        <li><a href="projetos.html">./projetos</a></li>
+        <li><a href="#contato">./contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- =============================================
+       CONTEÚDO PRINCIPAL
+       ============================================= -->
+  <main id="main-content">
+
+    <!-- =============================================
+         SEÇÃO HERO
+         ============================================= -->
+    <section id="hero" aria-labelledby="hero-name">
+      <div class="container hero-inner">
+
+        <div class="hero-text">
+          <p class="hero-tag" aria-label="Status: disponível para oportunidades">
+            DISPONÍVEL PARA OPORTUNIDADES
+          </p>
+
+          <h1 class="hero-name" id="hero-name">
+            Lu<span class="accent">iz</span>
+          </h1>
+
+          <p class="hero-title">
+            Desenvolvedor | Foco em Back-end, DevOps e Cibersegurança
+            <span class="cursor" aria-hidden="true"></span>
+          </p>
+
+          <blockquote class="hero-call">
+            "Transformando lógica em soluções seguras e eficientes."
+          </blockquote>
+
+          <a href="#contato" class="hero-cta" aria-label="Ir para seção de contato">
+            <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M22 2L11 13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+            ENTRAR EM CONTATO
+          </a>
+        </div>
+
+        <!-- =============================================
+             FOTO DE PERFIL
+             Para adicionar sua foto:
+             1. Salve a imagem na pasta do projeto
+             2. Remova o <div class="photo-placeholder">
+             3. Adicione: <img src="sua-foto.jpg" class="hero-photo-img" alt="Foto de Luiz, desenvolvedor" />
+             ============================================= -->
+        <figure class="hero-photo" aria-label="Foto de perfil">
+          <div class="photo-placeholder" role="img" aria-label="Espaço reservado para foto de perfil">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke="currentColor">
+              <circle cx="12" cy="8" r="4"/>
+              <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+            </svg>
+            <span>// sua foto aqui</span>
+          </div>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- =============================================
+         SEÇÃO SOBRE MIM
+         ============================================= -->
+    <section id="sobre" aria-labelledby="sobre-title">
+      <div class="container">
+
+        <header class="section-header reveal">
+          <p class="section-label" aria-hidden="true">01 // ABOUT</p>
+          <h2 class="section-title" id="sobre-title">
+            Sobre <span class="accent">Mim</span>
+          </h2>
+        </header>
+
+        <div class="sobre-grid">
+          <article class="sobre-text reveal" aria-label="Biografia">
+            <p>
+              Sou estudante de Sistemas de Informação no <strong>UNI-RN</strong> e atuo como desenvolvedor,
+              com forte inclinação para o back-end, cultura DevOps e cibersegurança.
+            </p>
+            <p>
+              Desde o início da minha jornada profissional como estagiário na área de tecnologia,
+              meu foco tem sido construir sistemas web resilientes e seguros — desde a modelagem
+              do banco de dados com <strong>PostgreSQL</strong> e <strong>Supabase</strong> até a
+              implementação de validações server-side robustas.
+            </p>
+            <p>
+              Movido pelo desafio de resolver problemas complexos, combino conhecimentos práticos
+              em arquitetura de redes, metodologias ágeis e ferramentas como <strong>Node.js</strong>,
+              <strong>Python</strong> e <strong>Go</strong> para entregar soluções eficientes que
+              realmente geram impacto.
+            </p>
+          </article>
+
+          <div class="sobre-stats reveal" role="list" aria-label="Destaques do perfil">
+            <article class="stat-box" role="listitem">
+              <span class="stat-num" aria-label="Curso: Sistemas de Informação">SI</span>
+              <span class="stat-label">// Sistemas de Informação · UNI-RN</span>
+            </article>
+            <article class="stat-box" role="listitem">
+              <span class="stat-num" aria-label="Mais de 3 linguagens">3+</span>
+              <span class="stat-label">// Linguagens dominadas</span>
+            </article>
+            <article class="stat-box" role="listitem">
+              <span class="stat-num" aria-label="Foco em segurança">SEC</span>
+              <span class="stat-label">// Foco em cibersegurança</span>
+            </article>
+            <article class="stat-box" role="listitem">
+              <span class="stat-num" aria-label="Desenvolvedor">DEV</span>
+              <span class="stat-label">// Experiência como estagiário</span>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================================
+         SEÇÃO HABILIDADES
+         ============================================= -->
+    <section id="habilidades" aria-labelledby="habilidades-title">
+      <div class="container">
+
+        <header class="section-header reveal">
+          <p class="section-label" aria-hidden="true">02 // SKILLS</p>
+          <h2 class="section-title" id="habilidades-title">
+            Habilidades &amp; <span class="accent">Tecnologias</span>
+          </h2>
+        </header>
+
+        <div class="skills-grid">
+
+          <article class="skill-card reveal" aria-labelledby="skill-langs">
+            <div class="skill-card-icon" aria-hidden="true">⌨️</div>
+            <h3 class="skill-card-title" id="skill-langs">// LINGUAGENS</h3>
+            <ul class="skill-tags" aria-label="Linguagens de programação">
+              <li class="skill-tag">JavaScript</li>
+              <li class="skill-tag">TypeScript</li>
+              <li class="skill-tag">Python</li>
+              <li class="skill-tag">Java</li>
+              <li class="skill-tag">Go</li>
+              <li class="skill-tag">HTML5</li>
+              <li class="skill-tag">CSS3</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal" aria-labelledby="skill-frameworks">
+            <div class="skill-card-icon" aria-hidden="true">🔧</div>
+            <h3 class="skill-card-title" id="skill-frameworks">// FRAMEWORKS &amp; FERRAMENTAS</h3>
+            <ul class="skill-tags" aria-label="Frameworks e ferramentas">
+              <li class="skill-tag">Node.js</li>
+              <li class="skill-tag">React</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal" aria-labelledby="skill-db">
+            <div class="skill-card-icon" aria-hidden="true">🗄️</div>
+            <h3 class="skill-card-title" id="skill-db">// BANCO DE DADOS</h3>
+            <ul class="skill-tags" aria-label="Banco de dados">
+              <li class="skill-tag">PostgreSQL</li>
+              <li class="skill-tag">Supabase</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal" aria-labelledby="skill-devops">
+            <div class="skill-card-icon" aria-hidden="true">⚙️</div>
+            <h3 class="skill-card-title" id="skill-devops">// DEVOPS &amp; VERSIONAMENTO</h3>
+            <ul class="skill-tags" aria-label="DevOps e versionamento">
+              <li class="skill-tag">Git</li>
+              <li class="skill-tag">GitHub</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal" aria-labelledby="skill-design">
+            <div class="skill-card-icon" aria-hidden="true">🎨</div>
+            <h3 class="skill-card-title" id="skill-design">// DESIGN &amp; GESTÃO</h3>
+            <ul class="skill-tags" aria-label="Design e gestão de projetos">
+              <li class="skill-tag">Figma (UI/UX)</li>
+              <li class="skill-tag">ClickUp</li>
+              <li class="skill-tag">Scrum</li>
+              <li class="skill-tag">5W2H</li>
+              <li class="skill-tag">Metas SMART</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         SEÇÃO ÁREAS DE CONHECIMENTO
+         ============================================= -->
+    <section id="areas" aria-labelledby="areas-title">
+      <div class="container">
+
+        <header class="section-header reveal">
+          <p class="section-label" aria-hidden="true">03 // KNOWLEDGE</p>
+          <h2 class="section-title" id="areas-title">
+            Áreas de <span class="accent">Conhecimento</span>
+          </h2>
+        </header>
+
+        <div class="areas-grid">
+
+          <article class="area-card reveal" aria-labelledby="area-web">
+            <span class="area-card-num" aria-hidden="true">01</span>
+            <div class="area-icon" aria-hidden="true">🌐</div>
+            <h3 class="area-title" id="area-web">Desenvolvimento Web</h3>
+            <p class="area-desc">
+              Criação de plataformas completas (ex: To-Do lists com React e Node),
+              do MVP à estruturação de banco de dados.
+            </p>
+          </article>
+
+          <article class="area-card reveal" aria-labelledby="area-sec">
+            <span class="area-card-num" aria-hidden="true">02</span>
+            <div class="area-icon" aria-hidden="true">🔒</div>
+            <h3 class="area-title" id="area-sec">Cibersegurança</h3>
+            <p class="area-desc">
+              Análise de vulnerabilidades (XSS, SQL Injection), validações server-side,
+              uso de Burp Suite e análise de logs.
+            </p>
+          </article>
+
+          <article class="area-card reveal" aria-labelledby="area-net">
+            <span class="area-card-num" aria-hidden="true">03</span>
+            <div class="area-icon" aria-hidden="true">🖧</div>
+            <h3 class="area-title" id="area-net">Redes &amp; Infraestrutura</h3>
+            <p class="area-desc">
+              Conhecimentos no Modelo OSI, protocolos (HTTP/HTTPS, TCP/UDP, DNS, SSH),
+              endereçamento IP e arquitetura de computadores.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         SEÇÃO CERTIFICAÇÕES
+         ============================================= -->
+    <section id="certs" aria-labelledby="certs-title">
+      <div class="container">
+
+        <header class="section-header reveal">
+          <p class="section-label" aria-hidden="true">04 // CERTS</p>
+          <h2 class="section-title" id="certs-title">
+            Certificações &amp; <span class="accent">Capacitações</span>
+          </h2>
+        </header>
+
+        <ul class="certs-list" aria-label="Lista de certificações">
+
+          <li class="cert-item reveal">
+            <div class="cert-bullet" aria-hidden="true"></div>
+            <article>
+              <h3 class="cert-name">A Hora da IA: Fundamentos de LLMs e Engenharia de Prompt</h3>
+              <p class="cert-org">Senac / UNI-RN</p>
+            </article>
+          </li>
+
+          <li class="cert-item reveal">
+            <div class="cert-bullet" aria-hidden="true"></div>
+            <article>
+              <h3 class="cert-name">Introdução à Cibersegurança</h3>
+              <p class="cert-org">Cisco Networking Academy / LatamDigital</p>
+            </article>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- =============================================
+         SEÇÃO CONTATO
+         ============================================= -->
+    <section id="contato" aria-labelledby="contato-title">
+      <div class="container">
+
+        <header class="section-header reveal">
+          <p class="section-label" aria-hidden="true">05 // CONTACT</p>
+          <h2 class="section-title" id="contato-title">
+            Entre em <span class="accent">Contato</span>
+          </h2>
+        </header>
+
+        <div class="contact-grid">
+
+          <!-- Info + Redes Sociais -->
+          <div class="contact-info reveal">
+            <h3>Vamos conversar?</h3>
+            <p>Aberto a oportunidades de estágio, freela ou colaboração em projetos.</p>
+
+            <!-- =============================================
+                 LINKS DAS REDES SOCIAIS
+                 Substitua os "#" pelos seus links reais:
+                 - GitHub:   https://github.com/SEU_USUARIO
+                 - LinkedIn: https://linkedin.com/in/SEU_USUARIO
+                 - E-mail:   mailto:seuemail@dominio.com
+                 ============================================= -->
+            <nav class="social-links" aria-label="Redes sociais e contato">
+
+              <a
+                href="https://github.com/SEU_USUARIO_AQUI"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Perfil do GitHub (abre em nova aba)"
+              >
+                <!-- ↑ SUBSTITUA: SEU_USUARIO_AQUI → seu usuário real do GitHub -->
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke="currentColor">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                </svg>
+                github.com/SEU_USUARIO
+              </a>
+
+              <a
+                href="https://linkedin.com/in/SEU_USUARIO_AQUI"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Perfil do LinkedIn (abre em nova aba)"
+              >
+                <!-- ↑ SUBSTITUA: SEU_USUARIO_AQUI → seu usuário real do LinkedIn -->
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke="currentColor">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                  <rect x="2" y="9" width="4" height="12"/>
+                  <circle cx="4" cy="4" r="2"/>
+                </svg>
+                linkedin.com/in/SEU_USUARIO
+              </a>
+
+              <a
+                href="mailto:SEU_EMAIL_AQUI@exemplo.com"
+                class="social-link"
+                aria-label="Enviar e-mail para Luiz"
+              >
+                <!-- ↑ SUBSTITUA: SEU_EMAIL_AQUI@exemplo.com → seu e-mail real -->
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke="currentColor">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                SEU_EMAIL_AQUI@exemplo.com
+              </a>
+
+            </nav>
+          </div>
+
+          <!-- Formulário de Contato -->
+          <div class="contact-form-wrapper reveal">
+            <form
+              class="contact-form"
+              id="contactForm"
+              novalidate
+              aria-label="Formulário de contato"
+            >
+              <div class="form-group">
+                <label class="form-label" for="contactName">// NOME</label>
+                <input
+                  type="text"
+                  id="contactName"
+                  name="name"
+                  class="form-input"
+                  placeholder="seu nome"
+                  autocomplete="name"
+                  required
+                  aria-required="true"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactEmail">// E-MAIL</label>
+                <input
+                  type="email"
+                  id="contactEmail"
+                  name="email"
+                  class="form-input"
+                  placeholder="seu@email.com"
+                  autocomplete="email"
+                  required
+                  aria-required="true"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactMessage">// MENSAGEM</label>
+                <textarea
+                  id="contactMessage"
+                  name="message"
+                  class="form-textarea"
+                  placeholder="Olá Luiz, gostaria de..."
+                  required
+                  aria-required="true"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="form-btn" id="sendBtn">
+                <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M22 2L11 13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+                <span id="btnText">ENVIAR_MSG.sh</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================================
+       RODAPÉ
+       ============================================= -->
+  <footer role="contentinfo">
+    <p>
+      <span aria-hidden="true">root@luiz:~$</span>
+      portfolio --version 1.0.0
+      &nbsp;|&nbsp;
+      Feito com <span aria-label="amor">♥</span> &amp; ☕
+    </p>
+  </footer>
+
+  <!-- =============================================
+       JAVASCRIPT
+       ============================================= -->
+  <script>
+    /* -----------------------------------------------
+       HAMBURGER MENU (mobile)
+       ----------------------------------------------- */
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+      hamburger.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu de navegação');
+    });
+
+    /* Fechar menu ao clicar em um link */
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    /* -----------------------------------------------
+       SCROLL REVEAL
+       ----------------------------------------------- */
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    /* -----------------------------------------------
+       NAV ACTIVE LINK NO SCROLL
+       ----------------------------------------------- */
+    const sections = document.querySelectorAll('section[id]');
+
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY + 120;
+      sections.forEach(sec => {
+        const link = document.querySelector(`.nav-links a[href="#${sec.id}"]`);
+        if (!link) return;
+        const inView = scrollY >= sec.offsetTop && scrollY < sec.offsetTop + sec.offsetHeight;
+        link.classList.toggle('active', inView);
+      });
+    }, { passive: true });
+
+    /* -----------------------------------------------
+       FORMULÁRIO — FEEDBACK VISUAL
+       ----------------------------------------------- */
+    const form    = document.getElementById('contactForm');
+    const sendBtn = document.getElementById('sendBtn');
+    const btnText = document.getElementById('btnText');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      btnText.textContent = 'ENVIANDO...';
+      sendBtn.disabled = true;
+
+      setTimeout(() => {
+        btnText.textContent = '✓ ENVIADO!';
+        setTimeout(() => {
+          btnText.textContent = 'ENVIAR_MSG.sh';
+          sendBtn.disabled = false;
+          form.reset();
+        }, 2500);
+      }, 1200);
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- =============================================
+       META & SEO
+       ============================================= -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projetos de Luiz — Desenvolvedor com foco em Back-end, DevOps e Cibersegurança. Veja os principais trabalhos e repositórios." />
+  <meta name="keywords" content="projetos, portfólio, desenvolvedor back-end, cibersegurança, nodejs, react, postgresql" />
+  <meta name="author" content="Luiz" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Luiz | Projetos" />
+  <meta property="og:description" content="Principais projetos desenvolvidos com foco em back-end, segurança e boas práticas." />
+  <meta property="og:type" content="website" />
+
+  <title>Luiz | Projetos</title>
+
+  <!-- Google Fonts (mesmas do index.html) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet compartilhado -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       CABEÇALHO / NAVEGAÇÃO
+       (Idêntico ao index.html — nav-logo ajustado
+       para apontar de volta à home)
+       ============================================= -->
+  <header role="banner">
+    <nav aria-label="Navegação principal">
+      <a class="nav-logo" href="index.html" aria-label="Voltar à página inicial — luiz.dev">
+        luiz<span>.dev</span>
+      </a>
+
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Abrir menu de navegação"
+        aria-expanded="false"
+        aria-controls="navLinks"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="index.html#sobre">./sobre</a></li>
+        <li><a href="index.html#habilidades">./skills</a></li>
+        <li><a href="index.html#areas">./areas</a></li>
+        <li><a href="index.html#certs">./certs</a></li>
+        <!-- Link ativo: estamos nesta página -->
+        <li><a href="projetos.html" class="active" aria-current="page">./projetos</a></li>
+        <li><a href="index.html#contato">./contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- =============================================
+       CONTEÚDO PRINCIPAL
+       ============================================= -->
+  <main id="main-content">
+
+    <!-- =============================================
+         HERO DA PÁGINA DE PROJETOS
+         ============================================= -->
+    <section id="projetos-hero" class="page-hero" aria-labelledby="projetos-title">
+      <div class="container page-hero-inner">
+
+        <div class="page-hero-text">
+          <p class="hero-tag" aria-hidden="true">REPOSITÓRIOS &amp; BUILDS</p>
+          <h1 class="section-title" id="projetos-title" style="font-size: clamp(2.2rem, 7vw, 4rem);">
+            Meus <span class="accent">Projetos</span>
+          </h1>
+          <p class="page-hero-sub">
+            Uma seleção dos trabalhos que refletem meu foco em soluções
+            <strong>seguras</strong>, <strong>escaláveis</strong> e com impacto real.
+          </p>
+        </div>
+
+        <!-- Contador de projetos -->
+        <div class="page-hero-meta" aria-label="Estatísticas de projetos">
+          <div class="meta-stat">
+            <span class="stat-num accent" aria-label="3 projetos">03</span>
+            <span class="stat-label">// projetos listados</span>
+          </div>
+          <div class="meta-stat">
+            <span class="stat-num accent" aria-label="8 tecnologias">08</span>
+            <span class="stat-label">// tecnologias usadas</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================================
+         GRID DE PROJETOS
+         ============================================= -->
+    <section id="lista-projetos" aria-labelledby="lista-title">
+      <div class="container">
+
+        <header class="section-header reveal">
+          <p class="section-label" aria-hidden="true">// PROJECTS</p>
+          <h2 class="section-title" id="lista-title" style="visibility: hidden; height: 0; margin: 0;">
+            Lista de Projetos
+          </h2>
+        </header>
+
+        <div class="projects-grid" role="list" aria-label="Lista de projetos">
+
+          <!-- =============================================
+               PROJETO 01 — LABORATÓRIO DE CIBERSEGURANÇA
+               ============================================= -->
+          <article class="project-card reveal" role="listitem" aria-labelledby="proj1-title">
+
+            <div class="project-card-header">
+              <div class="project-number" aria-hidden="true">01</div>
+              <div class="project-status project-status--study" aria-label="Tipo: Estudo prático">
+                estudo prático
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <h2 class="project-title" id="proj1-title">
+                Laboratório de Cibersegurança Web
+              </h2>
+
+              <!-- Tags de tecnologias -->
+              <ul class="project-tags" aria-label="Tecnologias utilizadas">
+                <li class="project-tag">Burp Suite</li>
+                <li class="project-tag">SQL Injection</li>
+                <li class="project-tag">XSS Analysis</li>
+                <li class="project-tag">Web Security</li>
+              </ul>
+
+              <!-- Resumo -->
+              <p class="project-desc">
+                Ambiente controlado de análise e exploração de vulnerabilidades web, com foco em
+                <strong>SQL Injection</strong> e <strong>Cross-Site Scripting (XSS)</strong>.
+                O projeto contempla a identificação de vetores de ataque, interceptação e modificação
+                de requisições via <strong>Burp Suite</strong> e a implementação de validações
+                <em>server-side</em> robustas como contramedida. Objetivo: desenvolver o mindset
+                ofensivo para construir sistemas defensivamente melhores.
+              </p>
+            </div>
+
+            <!-- Links -->
+            <div class="project-card-footer">
+              <!--
+                ↓↓↓ SUBSTITUA os href="#" pelos seus links reais ↓↓↓
+              -->
+              <a
+                href="https://github.com/SEU_USUARIO/lab-ciberseg"
+                class="project-link project-link--github"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ver repositório do Laboratório de Cibersegurança no GitHub (abre em nova aba)"
+              >
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                </svg>
+                Ver Repositório
+              </a>
+              <!-- Descomente abaixo se tiver um deploy/demo ao vivo
+              <a href="#" class="project-link project-link--demo" target="_blank" rel="noopener noreferrer"
+                 aria-label="Acessar demonstração ao vivo">
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+                Ver Demo
+              </a>
+              -->
+            </div>
+
+          </article>
+
+          <!-- =============================================
+               PROJETO 02 — API REST DE AGENDAMENTOS
+               ============================================= -->
+          <article class="project-card reveal" role="listitem" aria-labelledby="proj2-title">
+
+            <div class="project-card-header">
+              <div class="project-number" aria-hidden="true">02</div>
+              <div class="project-status project-status--dev" aria-label="Tipo: Em desenvolvimento">
+                em desenvolvimento
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <h2 class="project-title" id="proj2-title">
+                API REST de Agendamentos
+              </h2>
+
+              <ul class="project-tags" aria-label="Tecnologias utilizadas">
+                <li class="project-tag">Node.js</li>
+                <li class="project-tag">TypeScript</li>
+                <li class="project-tag">PostgreSQL</li>
+                <li class="project-tag">Supabase</li>
+              </ul>
+
+              <p class="project-desc">
+                API RESTful completa para gerenciamento de agendamentos, desde a
+                <strong>modelagem relacional no PostgreSQL</strong> com relacionamentos
+                many-to-many até a autenticação via <strong>Supabase Auth</strong>.
+                O projeto prioriza <strong>segurança server-side</strong>: validação de
+                entradas, sanitização de dados, controle de permissões por papel (RBAC)
+                e proteção contra ataques de injeção. Arquitetura em camadas seguindo
+                princípios <em>SOLID</em> para máxima manutenibilidade.
+              </p>
+            </div>
+
+            <div class="project-card-footer">
+              <!--
+                ↓↓↓ SUBSTITUA os href="#" pelos seus links reais ↓↓↓
+              -->
+              <a
+                href="https://github.com/SEU_USUARIO/api-agendamentos"
+                class="project-link project-link--github"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ver repositório da API REST no GitHub (abre em nova aba)"
+              >
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                </svg>
+                Ver Repositório
+              </a>
+              <!--
+              <a href="#" class="project-link project-link--demo" target="_blank" rel="noopener noreferrer"
+                 aria-label="Acessar documentação da API">
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+                Ver Docs
+              </a>
+              -->
+            </div>
+
+          </article>
+
+          <!-- =============================================
+               PROJETO 03 — PLATAFORMA DE GESTÃO DE TAREFAS
+               ============================================= -->
+          <article class="project-card reveal" role="listitem" aria-labelledby="proj3-title">
+
+            <div class="project-card-header">
+              <div class="project-number" aria-hidden="true">03</div>
+              <div class="project-status project-status--mvp" aria-label="Tipo: MVP concluído">
+                mvp concluído
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <h2 class="project-title" id="proj3-title">
+                Plataforma de Gestão de Tarefas
+              </h2>
+
+              <ul class="project-tags" aria-label="Tecnologias utilizadas">
+                <li class="project-tag">React</li>
+                <li class="project-tag">Node.js</li>
+                <li class="project-tag">Figma</li>
+                <li class="project-tag">Metodologias Ágeis</li>
+                <li class="project-tag">UI/UX</li>
+              </ul>
+
+              <p class="project-desc">
+                MVP de plataforma full-stack para gestão de tarefas desenvolvido do zero,
+                aplicando <strong>metodologias ágeis (Scrum)</strong> e planejamento com
+                <strong>5W2H e Metas SMART</strong>. O front-end em <strong>React</strong>
+                foi prototipado no <strong>Figma</strong> antes da implementação,
+                garantindo consistência de UX. No back-end, a API em <strong>Node.js</strong>
+                oferece CRUD completo com autenticação JWT, provando que soluções simples,
+                bem arquitetadas, resolvem problemas reais com mínima dívida técnica.
+              </p>
+            </div>
+
+            <div class="project-card-footer">
+              <!--
+                ↓↓↓ SUBSTITUA os href="#" pelos seus links reais ↓↓↓
+              -->
+              <a
+                href="https://github.com/SEU_USUARIO/task-platform"
+                class="project-link project-link--github"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ver repositório da Plataforma de Tarefas no GitHub (abre em nova aba)"
+              >
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                </svg>
+                Ver Repositório
+              </a>
+              <a
+                href="#"
+                class="project-link project-link--demo"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Acessar aplicação da Plataforma de Tarefas (abre em nova aba)"
+              >
+                <!-- ↑ SUBSTITUA o href="#" pela URL do deploy (Vercel, Netlify etc.) -->
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+                Acessar App
+              </a>
+            </div>
+
+          </article>
+
+        </div><!-- /projects-grid -->
+
+        <!-- CTA de volta à home -->
+        <div class="projects-cta reveal">
+          <a href="index.html#contato" class="hero-cta" aria-label="Ir para contato na página principal">
+            <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M22 2L11 13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+            FALAR SOBRE UM PROJETO
+          </a>
+          <a href="index.html" class="projects-back-link" aria-label="Voltar à página inicial">
+            <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"/>
+            </svg>
+            voltar ao portfólio
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================================
+       RODAPÉ (idêntico ao index.html)
+       ============================================= -->
+  <footer role="contentinfo">
+    <p>
+      <span aria-hidden="true">root@luiz:~$</span>
+      portfolio --version 1.0.0
+      &nbsp;|&nbsp;
+      Feito com <span aria-label="amor">♥</span> &amp; ☕
+    </p>
+  </footer>
+
+  <!-- =============================================
+       JAVASCRIPT
+       (hamburger + scroll reveal — idêntico ao index)
+       ============================================= -->
+  <script>
+    /* --- Hamburger menu --- */
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+      hamburger.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu de navegação');
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    /* --- Scroll reveal --- */
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer  = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 100);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+
+    revealEls.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
