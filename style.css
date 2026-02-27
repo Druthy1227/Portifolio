@@ -1010,6 +1010,23 @@ footer span {
   padding-bottom: 3rem;
 }
 
+/* Botão de retorno no logo (página de projetos) */
+.nav-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.nav-back svg {
+  opacity: 0.6;
+  transition: opacity var(--transition), transform var(--transition);
+}
+
+.nav-back:hover svg {
+  opacity: 1;
+  transform: translateX(-3px);
+}
+
 .page-hero-inner {
   display: flex;
   flex-direction: column;
