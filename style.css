@@ -267,6 +267,14 @@ nav {
   text-align: center;
 }
 
+/* Container do texto hero */
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 /* Tag de status */
 .hero-tag {
   font-family: var(--font-mono);
@@ -320,9 +328,18 @@ nav {
   color: var(--text-primary);
   border-left: 3px solid var(--accent-color);
   padding-left: 1rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
   text-align: left;
   quotes: none;
+}
+
+/* Container dos botões */
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
 }
 
 /* CTA */
@@ -902,6 +919,12 @@ footer span {
     --section-padding: 4.5rem 2rem;
   }
 
+  .hero-buttons {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -948,12 +971,20 @@ footer span {
     gap: 4rem;
   }
 
+  .hero-text {
+    align-items: flex-start;
+  }
+
   .hero-tag {
     justify-content: flex-start;
   }
 
   .hero-tag::before { display: block; }
   .hero-tag::after  { display: none; }
+
+  .hero-buttons {
+    justify-content: flex-start;
+  }
 
   .hero-photo {
     width: 300px;
