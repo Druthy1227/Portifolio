@@ -146,6 +146,15 @@ if (form && sendBtn && btnText) {
     updateUI(realIndex);
   }
 
+  /* ── Aguarda o scroll terminar (scrollend com fallback) ── */
+  function afterScroll(callback) {
+    if ('onscrollend' in window) {
+      track.addEventListener('scrollend', callback, { once: true });
+    } else {
+      setTimeout(callback, 500);
+    }
+  }
+
   /* ── Navegação direcional ── */
   function navigate(dir) {   // dir: +1 = → , -1 = ←
     if (animating) return;
@@ -154,17 +163,17 @@ if (form && sendBtn && btnText) {
     if (dir === 1 && current === total - 1) {
       scrollSmooth(total + 1);
       updateUI(0);
-      setTimeout(() => { jumpInstant(1); animating = false; }, 450);
+      afterScroll(() => { jumpInstant(1); animating = false; });
 
     } else if (dir === -1 && current === 0) {
       scrollSmooth(0);
       updateUI(total - 1);
-      setTimeout(() => { jumpInstant(total); animating = false; }, 450);
+      afterScroll(() => { jumpInstant(total); animating = false; });
 
     } else {
       scrollSmooth(current + 1 + dir);
       updateUI(current + dir);
-      setTimeout(() => { animating = false; }, 450);
+      afterScroll(() => { animating = false; });
     }
   }
 
