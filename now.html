@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- =============================================
+       META & SEO
+       ============================================= -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Now Page de Luiz — O que estou estudando e fazendo agora. Atualizado em Fevereiro de 2026." />
+  <meta name="author" content="Luiz" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Luiz | /now" />
+  <meta property="og:description" content="O que estou estudando e fazendo agora." />
+  <meta property="og:type" content="website" />
+
+  <title>Luiz | /now</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet compartilhado -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       CABEÇALHO / NAVEGAÇÃO
+       ============================================= -->
+  <header role="banner">
+    <nav aria-label="Navegação principal">
+      <a class="nav-logo nav-back" href="index.html" aria-label="Voltar à página inicial — luiz.dev">
+        <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+        luiz<span>.dev</span>
+      </a>
+
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Abrir menu de navegação"
+        aria-expanded="false"
+        aria-controls="navLinks"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="index.html#sobre">./sobre</a></li>
+        <li><a href="index.html#habilidades">./skills</a></li>
+        <li><a href="index.html#areas">./areas</a></li>
+        <li><a href="index.html#certs">./certs</a></li>
+        <li><a href="projetos.html">./projetos</a></li>
+        <li><a href="now.html" class="active" aria-current="page">./now</a></li>
+        <li><a href="index.html#contato">./contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- =============================================
+       CONTEÚDO PRINCIPAL
+       ============================================= -->
+  <main id="main-content">
+
+    <!-- =============================================
+         HERO DA NOW PAGE
+         ============================================= -->
+    <section id="now-hero" class="page-hero" aria-labelledby="now-title">
+      <div class="container page-hero-inner">
+
+        <div class="page-hero-text">
+          <p class="hero-tag" aria-hidden="true">ATUALIZADO EM FEVEREIRO DE 2026</p>
+          <h1 class="section-title" id="now-title" style="font-size: clamp(2.2rem, 7vw, 4rem);">
+            O que estou fazendo <span class="accent">agora</span>
+          </h1>
+          <p class="page-hero-sub">
+            Uma <em>now page</em> é um snapshot honesto do momento atual —
+            o que está ocupando minha atenção, meu tempo e minha energia.
+          </p>
+        </div>
+
+        <div class="page-hero-meta" aria-label="Metadados da página">
+          <div class="meta-stat">
+            <span class="stat-num accent" aria-label="Fevereiro">FEV</span>
+            <span class="stat-label">// 2026</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================================
+         CONTEÚDO DA NOW PAGE
+         ============================================= -->
+    <section id="now-content" aria-labelledby="now-content-title">
+      <div class="container">
+
+        <header class="section-header reveal" style="visibility:hidden;height:0;margin:0;">
+          <h2 id="now-content-title">Atividades atuais</h2>
+        </header>
+
+        <div class="now-grid">
+
+          <!-- Academia -->
+          <article class="now-card reveal" aria-labelledby="now-academia">
+            <div class="now-card-icon" aria-hidden="true">🎓</div>
+            <div class="now-card-content">
+              <h2 class="now-card-title" id="now-academia">Academia</h2>
+              <p>
+                Cursando <strong>Sistemas de Informação no UNI-RN</strong> e
+                <strong>Técnico em Informática no IMD</strong>, focado na preparação
+                para o próximo período com ênfase em
+                <span class="accent">Inteligência Artificial</span>.
+              </p>
+            </div>
+          </article>
+
+          <!-- Código & IA -->
+          <article class="now-card reveal" aria-labelledby="now-code">
+            <div class="now-card-icon" aria-hidden="true">💻</div>
+            <div class="now-card-content">
+              <h2 class="now-card-title" id="now-code">Código &amp; IA</h2>
+              <p>
+                Utilizando a plataforma <strong>Alura</strong> para aprofundar
+                estudos em desenvolvimento e IA. Explorando automação de processos,
+                integração de modelos de IA generativa e refinando habilidades em
+                <span class="accent">Engenharia de Prompt</span>, mantendo um
+                escopo amplo para dominar novas ferramentas.
+              </p>
+            </div>
+          </article>
+
+          <!-- Segurança -->
+          <article class="now-card reveal" aria-labelledby="now-sec">
+            <div class="now-card-icon" aria-hidden="true">🛡️</div>
+            <div class="now-card-content">
+              <h2 class="now-card-title" id="now-sec">Segurança</h2>
+              <p>
+                Mantendo uma rotina ativa de estudos em cibersegurança, com foco
+                contínuo na análise de <span class="accent">vulnerabilidades web</span>
+                e arquitetura de defesa.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Radar de Leituras -->
+        <div class="reading-section reveal" style="margin-top:4rem;">
+
+          <h2 class="reading-title">📚 Radar de Leituras &amp; Estante Base</h2>
+          <p class="reading-sub">
+            Além dos estudos práticos, dedico parte do meu tempo à leitura de literaturas
+            fundamentais para a engenharia de software, agilidade e negócios.
+            Alguns dos livros que formaram minha base e que recomendo:
+          </p>
+
+          <div class="books-grid">
+
+            <article class="book-card reveal" aria-label="O Programador Pragmático">
+              <span class="book-num" aria-hidden="true">01</span>
+              <div class="book-body">
+                <h3 class="book-title">O Programador Pragmático</h3>
+                <p class="book-author">Andrew Hunt &amp; David Thomas</p>
+                <p class="book-focus">Boas práticas, arquitetura e código limpo.</p>
+              </div>
+            </article>
+
+            <article class="book-card reveal" aria-label="TDD na Prática">
+              <span class="book-num" aria-hidden="true">02</span>
+              <div class="book-body">
+                <h3 class="book-title">TDD na Prática</h3>
+                <p class="book-author">Camilo Lopes</p>
+                <p class="book-focus">Testes automatizados e cultura de qualidade.</p>
+              </div>
+            </article>
+
+            <article class="book-card reveal" aria-label="Lean Inception">
+              <span class="book-num" aria-hidden="true">03</span>
+              <div class="book-body">
+                <h3 class="book-title">Lean Inception</h3>
+                <p class="book-author">Paulo Caroli / Martin Fowler</p>
+                <p class="book-focus">Alinhamento de produtos, MVP e metodologias ágeis.</p>
+              </div>
+            </article>
+
+            <article class="book-card reveal" aria-label="Python sem Mistério">
+              <span class="book-num" aria-hidden="true">04</span>
+              <div class="book-body">
+                <h3 class="book-title">Python sem Mistério</h3>
+                <p class="book-author">Joel Saade</p>
+                <p class="book-focus">Aprofundamento na linguagem utilizada nas automações com IA.</p>
+              </div>
+            </article>
+
+            <article class="book-card reveal" aria-label="Começando a Programar em Java para Leigos">
+              <span class="book-num" aria-hidden="true">05</span>
+              <div class="book-body">
+                <h3 class="book-title">Começando a Programar em Java para Leigos</h3>
+                <p class="book-author">3ª Edição</p>
+                <p class="book-focus">Fundamentos de OOP e tipagem forte.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- CTA de volta à home -->
+        <div class="projects-cta reveal" style="margin-top: 3rem;">
+          <a href="index.html#contato" class="hero-cta" aria-label="Ir para contato na página principal">
+            <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M22 2L11 13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+            ENTRAR EM CONTATO
+          </a>
+          <a href="index.html" class="projects-back-link" aria-label="Voltar à página inicial">
+            <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"/>
+            </svg>
+            voltar ao portfólio
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================================
+       RODAPÉ
+       ============================================= -->
+  <footer role="contentinfo">
+    <p>
+      <span aria-hidden="true">root@luiz:~$</span>
+      portfolio --version 1.0.0
+      &nbsp;|&nbsp;
+      Feito com <span aria-label="amor">♥</span> &amp; ☕
+    </p>
+  </footer>
+
+  <!-- =============================================
+       JAVASCRIPT
+       ============================================= -->
+  <script src="script.js"></script>
+
+</body>
+</html>
